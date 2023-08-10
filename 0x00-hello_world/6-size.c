@@ -11,6 +11,7 @@
  */
 int main(void)
 {
-	printf("%d \n", sizeof(i));
+	float i;
+	printf("%f \n", sizeof(i));
 return (0);
 }
