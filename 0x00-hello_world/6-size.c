@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <cs50.h>
 /**
  * main - function to run the code
  *
