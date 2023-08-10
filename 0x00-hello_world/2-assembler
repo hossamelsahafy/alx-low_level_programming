@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -o ${CSFILE%.c}.o
+gcc -S $CFILE | mv main.c main.s
