@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-	int n = 0;
+	int n = 0i;
 
 	if (n > 0)
 	{
-		printf("%ld is positive\n", n);
+		printf("%d is positive\n", n);
 	}
-	if (n < 0)
+	else if (n < 0)
 	{
-		printf("%ld is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
