@@ -2,16 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * more headers goes there
+ * main - this function for running the code
  *
- * main - Entry point
+ * printf: prints the target
  *
- * Round: Always 0
+ * betty style doc for function main goes there
+ * Description: print something discripes programming
  *
- * description: Using if statement to identify numbers
- *
- * printf: to print the target
- *
+ * Return: Always 0
  */
 int main(void)
 {
