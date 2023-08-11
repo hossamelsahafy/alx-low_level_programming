@@ -2,11 +2,11 @@
 #include <unistd.h>
 #define  SENTENCE "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
 /**
- * main - run the code
+ * main - entry point that run the code
  *
  * Description: print without printf command
  *
- * Return 1 Always
+ * Return: 1 Always
  */
 int main(void)
 {
