@@ -16,10 +16,10 @@ long int li;
 long long int lli;
 float f;
 
-	printf("Size of a char:%c \n", sizeof(s));
-	printf("Size of an int:%i \n", sizeof(s));
-	printf("Size of a long int:%ld \n", sizeof(s));
-	printf("Size of an long long int:%lld \n", sizeof(s));
-	printf("Size of an float:%f \n", sizeof(s));
+	printf("Size of a char:%zu \n", size_t(s));
+	printf("Size of an int:%zu \n", size_t(s));
+	printf("Size of a long int:%zu \n", size_t(s));
+	printf("Size of a long long int:%zu \n", size_t(s));
+	printf("Size of a float:%zu \n", size_t(s));
 return (0);
 }
