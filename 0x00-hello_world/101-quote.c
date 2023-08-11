@@ -9,8 +9,9 @@
  */
 int main(void)
 {
-	char buffer[]="and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	int len=59;
-	write(2, buffer ,len);
-return (1);			
+	char buffer = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	int len = 59;
+
+	write(2, buffer, len);
+return (1);
 }
