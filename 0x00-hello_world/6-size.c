@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <cs50.h>
 /**
  * main - function to run the code
  *
@@ -11,11 +10,11 @@
  */
 int main(void)
 {
-	char c;
-	int i;
-	long int li;
-	long long int lli;
-	float f;
+char c;
+int i;
+long int li;
+long long int lli;
+float f;
 
 	printf("Size of a char:%c \n", sizeof(s));
 	printf("Size of an int:%i \n", sizeof(s));
