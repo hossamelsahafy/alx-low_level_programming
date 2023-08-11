@@ -1,21 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+/**
+ * main - entry point that run the code
+ *
+ * Description: identify numbers with some functions
+ *
+ * printf:to print the target
+ *
+ * Return: 0 Always
+ */
 int main(void)
 {
-    int n;
+	int n;
+	int last;
 
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    /* your code goes here */
-    int last_digit = n % 10; // get the last digit of n by modulo 10
-    printf("Last digit of %d is %d", n, last_digit); // print the last digit of n
-    if (last_digit > 5) // if the last digit is greater than 5
-    {
-        printf(" and is greater than 5\n"); // print and is greater than 5
-    }
-    else if (last_digit == 0) // if the last digit is 0
-    {
-        printf(" and is 0\n"); // print and is 0
-    }
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	last = n % 10;
+
+	if (last > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n",
+				n, last);
+	}
+	else if (last == 0)
+	{
+		printf("Last digit of %d is %d and is 0\n", n, last);
+	}
+	else if (last < 6 && last != 0)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n"
+				, n, last);
+	}
+return (0);
+}
