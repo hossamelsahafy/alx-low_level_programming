@@ -10,13 +10,17 @@ int main(void)
 {
 	long int n = 0;
 
-	if (n > 0)
+	if (n == 0)
 	{
-		printf("%ld is positive\n", n);
+		printf("%ld is zero\n", n);
 	}
 	else if (n < 0)
 	{
 		printf("%ld is negative\n", n);
 	}
+	else
+	{
+		print("%ld is positive\n", n);
+	{
 return (0);
 }
