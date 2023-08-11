@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdef.h>
 /**
  * main - function to run the code
  *
@@ -16,10 +16,10 @@ long int li;
 long long int lli;
 float f;
 
-	printf("Size of a char:%zu \n", size_t(s));
-	printf("Size of an int:%zu \n", size_t(s));
-	printf("Size of a long int:%zu \n", size_t(s));
-	printf("Size of a long long int:%zu \n", size_t(s));
-	printf("Size of a float:%zu \n", size_t(s));
+	printf("Size of a char:%zu \n", sizeof(s));
+	printf("Size of an int:%zu \n", sizeof(s));
+	printf("Size of a long int:%zu \n", sizeof(s));
+	printf("Size of a long long int:%zu \n", sizeof(s));
+	printf("Size of a float:%zu \n", sizeof(s));
 return (0);
 }
