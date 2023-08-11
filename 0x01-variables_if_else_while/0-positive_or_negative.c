@@ -1,17 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-int main(void)
-{
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-/**
- * main - entry point to run the code
+ /* more headers goes there */
+ /* betty style doc for function main goes there*/
+ /**
+ * main - Entry point to run the code
  *
  * Description: printing nigative and positive numbers
  *
@@ -19,6 +12,10 @@ int main(void)
  */
 int main(void)
 {
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
 	{
