@@ -18,7 +18,7 @@ int main(void)
 	{
 		printf("%ld is negative\n", n);
 	}
-	else
+	else if (n == 0)
 	{
 		printf("%ld is zero\n", n);
 	}
