@@ -14,8 +14,7 @@ int main(void)
 
 	for (i =0; i<= 10; i++)
 	{
-		putcahr (i);
+		printf("%d \n");
 	}
-	putchar ('\n');
 return (0);
 }
