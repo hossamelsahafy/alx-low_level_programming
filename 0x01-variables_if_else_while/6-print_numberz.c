@@ -16,7 +16,7 @@ int main(void)
 
 	while (i < 10)
 	{
-		putchar (i + '0');
+		putchar (i + '1');
 	}
 	putchar ('\n');
 return (0);
