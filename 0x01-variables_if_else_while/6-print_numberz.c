@@ -2,7 +2,7 @@
 /**
  * main - this function to start coding
  *
- * Description: print some number
+ * Description: print some numbers
  *
  * putchar: to print the target
  *
@@ -15,9 +15,8 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		c = i + '0';
-		write(1, &c, 1);
+		printf("%d", i);
 	}
-	c = '\n';
+	printf('\n');
 return (0);
 }
