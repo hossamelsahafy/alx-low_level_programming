@@ -2,7 +2,7 @@
 /**
  * main - this function to start coding
  *
- * Deiscription: print some numbers with commas  except
+ * Deiscription: print some numbers with commas  except similar numbers
  *
  * putchar: to print the target
  *
