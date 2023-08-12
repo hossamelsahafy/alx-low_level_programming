@@ -16,7 +16,8 @@ int main(void)
 
 	while (i < 10)
 	{
-		putchar (i + '1');
+		printf("%d ", i);
+		i = i + 1;
 	}
 	putchar ('\n');
 return (0);
