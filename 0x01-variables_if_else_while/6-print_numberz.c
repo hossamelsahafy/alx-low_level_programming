@@ -11,11 +11,13 @@
 int main(void)
 {
 	int i;
+	char c;
 
 	for (i = 0; i < 10; i++)
 	{
-		printf("%d", i);
+		c = i + '0';
+		write(1, &c, 1);
 	}
-	printf("\n");
+	c = '\n';
 return (0);
 }
