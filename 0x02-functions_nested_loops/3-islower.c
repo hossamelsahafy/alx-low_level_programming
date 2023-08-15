@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <ctype.h>
+#include "_putchar.c"
 /**
  * _islower - to check the lower character
  * _putchar: print the target
@@ -8,20 +9,21 @@
  * Description: checking for the lower chracter
  * Return: 1 if c is lower case 0 otherwise
  */
-
 int _islower(int c)
-
 {
 	if (c >= 'a' && c <= 'z')
 	{
 		_putchar(c);
 		return (1);
 	}
-	else
+	else 
 	{
 		return (0);
-	}
+	}			
+	
+}
+int main(void)
+{
 
-		_putchar('\n');
-
+	return (0);
 }
