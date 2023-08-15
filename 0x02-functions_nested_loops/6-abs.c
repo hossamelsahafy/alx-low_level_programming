@@ -10,12 +10,11 @@
  * Return: always 0
  */
 
-int main(void)
+int _abs(int);
 {
-	int x = -5;
-	int y = abs(x);
-
-	_putchar (y);
-_putchar ('\n');
-return (1);
+	if ( n > 0)
+		return(-n);
+	else
+		return (n);
 }
+
