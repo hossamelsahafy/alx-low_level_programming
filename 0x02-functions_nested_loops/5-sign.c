@@ -31,7 +31,7 @@ int print_sign(int n)
 	}
 	else
 	{
-		_putcha('+');
+		_putchar('-');
 		return (-1);
 	}
 }
