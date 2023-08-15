@@ -12,10 +12,9 @@
 
 int main(void)
 {
-	int x,y;
-
 	int x = -5;
 	int y = abs(x);
+
 	_putchar (y);
 _putchar ('\n');
 return (0);
