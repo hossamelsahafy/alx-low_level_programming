@@ -17,7 +17,7 @@ int main(void)
 	int y = abs(x);
 
 	{
-		_putchar ('y');
+		_putchar (y);
 	}
 _putchar ('\n');
 return (0);
