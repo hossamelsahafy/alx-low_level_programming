@@ -12,6 +12,7 @@
 
 int main(void)
 {
+	int x,y;
 
 	int x = -5;
 	int y = abs(x);
