@@ -1,16 +1,16 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * main - Entry point
+ * _abs - to compute the absolute value 
  *
- * _putchar: print the target
+ * Description: computing absolute value of numbers
  *
- * Description: printing absolute value of numbers
- *
- * Return: always 0
+ * Return: the function returns -n,
+ * which is the positive equivalent of n. If n is non-negative,
+ * the function simply returns n
  */
 
-int _abs(int);
+int _abs(int)
 {
 	if ( n > 0)
 		return(-n);
