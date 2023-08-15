@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * print_alphabet - prints the lowercase alphabet for 10 times
+ * print_alphabet_x10 - prints the lowercase alphabet 10 times
  *
- * _putchar: prints the target
+ * Description: This function uses two nested loops to print the
+ * lowercase alphabet 10 times. Each iteration of the alphabet is
+ * followed by a newline character.
  *
- * Description: print alphabet
- *
- * Return = void
+ * Return: void
  */
-void  print_alphabet(void)
+void  print_alphabet_x10(void)
 {
 	char c;
 	int i;
