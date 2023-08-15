@@ -1,7 +1,4 @@
-#include <stdio.h>
 #include "main.h"
-#include <ctype.h>
-#include "_putchar.c"
 /**
  * _islower - to check the lower character
  * _putchar: print the target
@@ -11,19 +8,8 @@
  */
 int _islower(int c)
 {
-        if (c >= 'a' && c <= 'z')
-        {
-                _putchar(c);
-                return (1);
-        }
-        else
-        {
-                return (0);
-        }
+        if (c >= 97 && c <= 122)
+		return (1);
+	return (0);
 
-}
-int main(void)
-{
-
-        return (0);
 }
