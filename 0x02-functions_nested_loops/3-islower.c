@@ -20,16 +20,7 @@ int _islower(int c)
 	{
 		return (0);
 	}
-int main(void)
-{
-	char c = 'A';
-	printf("%c is lowercase: %d\n", c, _islower(c));
-	c = 'a';
-	printf("%c is lowercase: %d\n", c, _islower(c));
-	return 0;
-}
-}
 
-_putchar('\n');
+		_putchar('\n');
 
 }
