@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - this function for running the code
+ * print_alphabet -  function that prints the lowercase alphabet
  *
  * _putchar: prints the target
  *
  * Description: print alphabet
  *
- * print_alphabet: function that prints the lowercase alphabet followed by a newline
- *
- * Return: Always 0
+ * Return = void
  */
 void print_alphabet(void)
 {
