@@ -5,12 +5,12 @@
  *
  * Description: computing absolute value of numbers
  *
- * Return: the function returns will be positive
+ * Return: always 0
  */
 
 int _abs(int n)
 {
-	if ( n < 0)
+	if (n < 0)
 		n = (-1) * n;
-		return (n);
+return (0);
 }
