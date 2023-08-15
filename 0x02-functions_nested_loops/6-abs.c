@@ -12,11 +12,10 @@
 
 int main(void)
 {
-	int x;
-	int y;
 
-	int x = -5
+	int x = -5;
 	int y = abs(x);
+
 	{
 		_putchar ('y');
 	}
