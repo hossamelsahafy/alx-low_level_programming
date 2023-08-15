@@ -8,7 +8,7 @@
  * Return: the function returns will be positive
  */
 
-int _abs(int)
+int _abs(int n)
 {
 	if ( n < 0)
 		n = (-1) * n;
