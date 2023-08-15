@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <ctype.h>
 /**
  * _islower - to check the lower character
  * _putchar: print the target
