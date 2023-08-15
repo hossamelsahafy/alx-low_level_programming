@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isalpha - to check the lower & upper cases
+ * _isalpha - to check the lower & upper cases
  *
  * @c: character to check
  *
@@ -8,7 +8,7 @@
  *
  * Return: 1 if c is lower or upper case 0 otherwise
  */
-int isalpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
