@@ -24,6 +24,7 @@ void times_table(void)
 			_putchar(' ');
 
 			x = i * j;
+
 			if (x <= 9)
 				_putchar(' ');
 			else
