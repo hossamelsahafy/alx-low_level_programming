@@ -21,6 +21,6 @@ int main(void)
 			z += i;
 		}
 	}
-	printf("%d\n", z)
+	printf("%d\n", z);
 return (0);
 }
