@@ -7,7 +7,7 @@
  * printf:to print the target
  *
  */
-void jack_baure(void)
+void jack_bauer(void)
 {
 	int hour,  min;
 
