@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_baur - funckion to print time
+ * jack_bauer - funckion to print time
  *
  * Description: print time
  *
