@@ -1,12 +1,20 @@
 #include <stdio.h>
+/**
+ * main - entry point
+ *
+ * Description: print first 50 num
+ * of fibonacci
+ *
+ * Return: always zero
+ */
 int main(void)
 {
 	int x;
-	unsigned long i = 0 , j = 1, z;
+	unsigned long i = 0, j = 1, z;
 
-	for (x =0; x < 50; x++)
+	for (x = 0; x < 50; x++)
 	{
-		z = i +j;
+		z = i + j;
 		printf("%lu", z);
 
 		i = j;
@@ -14,7 +22,7 @@ int main(void)
 
 		if (x == 49)
 		{
-			_putchar('\n');
+			putchar('\n');
 		}
 		else
 		{
@@ -24,7 +32,3 @@ int main(void)
 
 	return (0);
 }
-
-		
-
-		
