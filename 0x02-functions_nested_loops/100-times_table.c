@@ -10,7 +10,7 @@
  */
 void print_times_table(int n)
 {
-	int x, y, z;
+	int z, y, x;
 
 	if (n <= 15 && n >= 0)
 	{
@@ -22,7 +22,7 @@ void print_times_table(int n)
 				_putchar(',');
 				_putchar(' ');
 
-				z = x * y;
+				z = y * x;
 				if (z <= 9)
 					_putchar(' ');
 				if (z <= 99)
