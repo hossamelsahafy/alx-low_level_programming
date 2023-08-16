@@ -28,8 +28,10 @@ void times_table(void)
 			if (x <= 9)
 				_putchar(' ');
 			else
+			{
 				_putchar(x / 10 + '0');
 				_putchar(x % 10 + '0');
+			}
 
 		}
 		_putchar('\n');
