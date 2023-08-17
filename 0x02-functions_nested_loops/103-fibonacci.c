@@ -22,7 +22,7 @@ int main(void)
 		}
 		if ((z % 2) == 0)
 		{
-			t += z
+			t += z;
 		}
 
 		i = j;
