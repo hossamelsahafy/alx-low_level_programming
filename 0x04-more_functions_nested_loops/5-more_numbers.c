@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * void more_numbers - function to print numbers 10 times
+ *  more_numbers - function to print numbers 10 times
  *
  * _putchar: to print the target
  */
