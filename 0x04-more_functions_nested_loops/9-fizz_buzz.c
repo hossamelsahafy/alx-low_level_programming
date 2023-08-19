@@ -10,29 +10,24 @@
  * so it will print fizz if there was no remaing while dividing it
  * on 5 so it will print buzz
  */
+#include <stdio.h>
+
 int main(void)
 {
-	int i;
-
-	for (i = 1; i <= 100; i++)
+	for (int i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-			printf("FizzBuzz ");
-		
+			printf("FizzBuzz");
 		else if (i % 3 == 0)
 			printf("Fizz");
-		
 		else if (i % 5 == 0)
 			printf("Buzz");
-		
 		else
 			printf("%d", i);
-
 		if (i != 100)
 			printf(" ");
 		else
 			printf("\n");
-			return (0);
-		
 	}
+	return (0);
 }
