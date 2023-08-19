@@ -32,7 +32,7 @@ int main(void)
 			printf(" ");
 		else
 			printf("\n");
+			return (0);
 		
 	}
-return (0);
 }
