@@ -8,7 +8,7 @@
 int main(void)
 {
 	long int n = 612852475143;
-	int i;
+	long int i;
 
 	for (i = 2; i <= sqrt(n); i++)
 	{
