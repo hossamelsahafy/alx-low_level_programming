@@ -23,7 +23,7 @@ int main(void)
 			break;
 		putchar ('c');
 	}
-	printf("%c", 2772 - i)
+	printf("%c", 2772 - i);
 	return (0);
 
 }
