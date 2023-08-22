@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
  * print_rev - function to reverse the text
  *
@@ -8,9 +9,14 @@
  */
 void print_rev(char *s)
 {
-	if (*s == '\0')
-		return;
+	int i;
 
-	print_rev(s + 1);
-	putchar (*s);
+	i = strlen(s) - 1;
+
+	while (i >= 0)
+	{
+		putchar(*(s + i));
+		i--;
+	}
+	putchar('\n');
 }
