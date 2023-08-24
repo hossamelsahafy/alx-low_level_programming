@@ -6,29 +6,20 @@
  *
  * @s2: parameter point to char
  *
- * Return: if s1 = s2 return will be zero
- * if s1 > s2 return will be s1
- * if s2 > s1 return s2
+ * Return: will be result
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, n;
+	int i, result;
 
-	for (i = 0; i < n && s2[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 	{
-		s1 = s2;
-		if (s1 == s2)
+		result  = s1[i] - s2[i];
+		if (result != '\0')
 		{
-			return (0);
-		}
-		if (s1 > s2)
-		{
-			return (S1);
-		}
-		if (s1 < s2)
-		{
-			return (S2);
+			return (result);
 		}
 	}
+	return (s1[i] - S2[i]);
 
 }
