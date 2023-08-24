@@ -13,10 +13,9 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	char *p = dest;
-
 	int count = 0;
 
-	while (*p != '\0');
+	while (*p != '\0')
 	{
 		p++;
 	}
