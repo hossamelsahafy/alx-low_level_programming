@@ -7,6 +7,8 @@
  * @src: parameter that point to char
  *
  * @n: parameter to make limit for numbers
+ *
+ * Return: will be dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -26,6 +28,5 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 		i++;
 	}
-	
-	
+	return (dest);
 }
