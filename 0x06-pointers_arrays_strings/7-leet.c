@@ -3,6 +3,8 @@
 /**
  * leet - function to replace letter by numbers
  *
+ * @str: parameter point to char
+ *
  * Return: will be p
  */
 char *leet(char *str)
