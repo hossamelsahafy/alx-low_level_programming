@@ -28,7 +28,7 @@ char *cap_string(char *str)
 		{
 			str[i] = tolower((int)str[i]);
 		}
-		else if (str[i] == ' ' || str[i] == '.' || 
+		else if (str[i] == ' ' || str[i] == '.' ||
 				(str[i] == ' ' && str[i + 1] == '\n'))
 		{
 			start = true;
