@@ -1,6 +1,5 @@
 #include "main.h"
 #include <ctype.h>
-#include <stdbool.h>
 /**
  * cap_string - function to capitalize all words of string
  *
@@ -10,8 +9,10 @@
  */
 char *cap_string(char *s)
 {
-	int i = 0;
-	int flag = 1;
+	int i;
+	i = 0;
+	int flag;
+	flag = 1;
 
 	while (s[i] != '\0')
 	{
