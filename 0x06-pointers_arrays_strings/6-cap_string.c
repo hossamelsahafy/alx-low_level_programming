@@ -4,34 +4,41 @@
 /**
  * cap_string - function to capitalize all words of string
  *
- * @s: parameter to point to char
+ * is_separator - function returns a value of type bool
+ *
+ * @str: parameter to point to char
+ *
+ * @c: parameter to define char
  *
  * Return: will be s
  */
-char *cap_string(char *s)
+bool is_separator(char c)
 {
-	int i = 0;
-	bool start = 1;
-	char sep[] = ",;.!?\"(){} \t\n";
-
-	while (s[i] != '\0')
-	{
-		if (isalpha(s[i]))
-		{
-			if (start)
-			{
-				s[i] = toupper((unsigned char)s[i];
-				start = 0;
-			}
-		}
-		else
-		{
-			if (strchr(sep, s[i]))
-			{
-				start = 1;
-			}
-		}
-		i++;
-	}
-	return (s);
+	return c == ' ' || c == '\t' || c == '\n'
+		|| c == ',' || c == ';'
+		|| c == '.' || c == '!' || c == '?' || c == '"'
+		|| c == '(' || c == ')' || c == '{' || c == '}';
 }
+
+char *cap_string(char *str)
+{
+	bool n = true;
+	for (int i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == '\t')
+		{
+			str[i] = ' ';
+		}
+		if (is_separator(str[i]))
+		{
+			n = true;
+		}
+		else if (n)
+		{
+			str[i] = toupper(str[i]);
+			n = false;
+		}
+	}
+	return (str);
+}
+
