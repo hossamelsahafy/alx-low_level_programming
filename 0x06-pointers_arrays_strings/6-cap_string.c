@@ -1,6 +1,21 @@
 #include "main.h"
 #include <ctype.h>
 /**
+ * is_separator - function to takes a character c as an input
+ *
+ * @c: parameter to define char
+ *
+ * Return: a boolean value indicating whether
+ * the character is a separator or not
+ */
+bool is_separator(char c)
+{
+	return (c == ' ' || c == '\t' || c == '\n'
+			|| c == ',' || c == ';'
+			|| c == '.' || c == '!' || c == '?' || c == '"'
+			|| c == '(' || c == ')' || c == '{' || c == '}');
+}
+/**
  * cap_string - function to capitalize words
  *
  * @str: parameter poin to char
@@ -9,25 +24,24 @@
  */
 char *cap_string(char *str)
 {
+	bool n = true;
 	int i;
 
-	i = 0;
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (i == 0 || str[i] == ' ' || str[i] == '\t'
-				|| str[i] == '\n' || str[i] == ',' || str[i] == ';'
-				|| str[i] == '.'  || str[i] == '?' || str[i] == '"'
-				|| str[i] == '!'  || str[i] == '(' || str[i] == ')'
-				|| str[i] == '{'  || str[i] == '}')
+		if (str[i] == '\t')
 		{
-			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
-				str[i + 1] = str[i + 1] - 32;
-			if (str[i] == '\t')
-			{
-				str[i] = ' ';
-			}
+			str[i] = ' ';
 		}
-		i++;
+		if (is_separator(str[i]))
+		{
+			n = true;
+		}
+		else if (n)
+		{
+			str[i] = toupper(str[i]);
+			n = false;
+		}
 	}
 	return (str);
 }
