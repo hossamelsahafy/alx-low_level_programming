@@ -10,29 +10,32 @@
  */
 char *cap_string(char *str)
 {
-	int i;
-	bool start = true;
+	int i = 0;
+	int flag = 1;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		if (str[i] == '\t')
+		if (isalpha(s[i]))
 		{
-			str[i] = '.';
+			if (flag)
+			{
+				s[i] = toupper(s[i]);
+				flag = 0;
+			}
 		}
-		if (start && isalpha((int)str[i]))
+		else
 		{
-			str[i] = toupper((int)str[i]);
-			start = false;
+			for (int j = 0; j < 14; j++)
+			{
+				char sep[] = ",;.!?\"(){}";
+				if (s[i] == sep[j] || isspace(s[i]))
+				{
+					flag = 1;
+					break;
+				}
+			}
 		}
-		else if (!start && isalpha((int)str[i]))
-		{
-			str[i] = tolower((int)str[i]);
-		}
-		else if (str[i] == ' ' || str[i] == '.' ||
-				(str[i] == ' ' && str[i + 1] == '\n'))
-		{
-			start = true;
-		}
+		i++;
 	}
-	return (str);
+	return s;
 }
