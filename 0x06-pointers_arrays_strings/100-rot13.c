@@ -5,7 +5,7 @@
  *
  * @str: paramater point to char
  *
- * Return: will be str
+ * Return: will be p
  */
 
 char *rot13(char *str)
@@ -16,7 +16,7 @@ char *rot13(char *str)
 	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *p = str;
 
-	while (str[i] != '\0')
+	while (*str)
 	{
 		for (i = 0; i <= 52; i++)
 		{
@@ -29,6 +29,6 @@ char *rot13(char *str)
 		}
 		str++;
 	}
-	return (str);
+	return (p);
 
 }
