@@ -7,7 +7,7 @@
 char *leet(char *str)
 {
 	char *p = str;
-	char a[] = {'A', 'E', 'O', 'T', 'L'}
+	char a[] = {'A', 'E', 'O', 'T', 'L'};
 	int v[] = {4, 3, 0, 7, 1};
 	unsigned int i;
 
