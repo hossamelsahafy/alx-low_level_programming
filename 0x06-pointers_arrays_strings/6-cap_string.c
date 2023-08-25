@@ -2,27 +2,31 @@
 #include <ctype.h>
 #include <stdbool.h>
 /**
- * cap_string - function to capitalize all words of string
- *
  * is_separator - function returns a value of type bool
- *
- * @str: parameter to point to char
  *
  * @c: parameter to define char
  *
- * Return: will be s
+ * Return:  returns true if the character c is one of the separators
+ * , and false otherwise
  */
 bool is_separator(char c)
 {
-	return c == ' ' || c == '\t' || c == '\n'
+	return (c == ' ' || c == '\t' || c == '\n'
 		|| c == ',' || c == ';'
 		|| c == '.' || c == '!' || c == '?' || c == '"'
-		|| c == '(' || c == ')' || c == '{' || c == '}';
+		|| c == '(' || c == ')' || c == '{' || c == '}');
 }
-
+/**
+ * cap_string - function to capitalize all words of string
+ *
+ * @str: parameter to point to char
+ *
+ * Return: will be str
+ */
 char *cap_string(char *str)
 {
 	bool n = true;
+
 	for (int i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] == '\t')
