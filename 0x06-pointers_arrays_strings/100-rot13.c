@@ -5,7 +5,7 @@
  *
  * @str: paramater point to char
  *
- * Return: will be p
+ * Return: will be str
  */
 
 char *rot13(char *str)
@@ -29,6 +29,6 @@ char *rot13(char *str)
 		}
 		str++;
 	}
-	return (p);
+	return (str);
 
 }
