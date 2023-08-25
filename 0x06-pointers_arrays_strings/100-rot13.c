@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 /**
  * rot13 - function to replace letter
  *
