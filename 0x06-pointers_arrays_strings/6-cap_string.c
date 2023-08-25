@@ -26,8 +26,9 @@ bool is_separator(char c)
 char *cap_string(char *str)
 {
 	bool n = true;
+	int i;
 
-	for (int i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] == '\t')
 		{
