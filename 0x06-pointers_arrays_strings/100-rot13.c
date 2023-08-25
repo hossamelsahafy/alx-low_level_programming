@@ -4,28 +4,27 @@
  *
  * @str: paramater point to char
  *
- * Return: will be p
+ * Return: will be str
  */
 
 char *rot13(char *str)
 {
 	int i;
+	int j;
 
 	char nor[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *p = str;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (i = 0; i <= 52; i++)
+		for (j = 0; j <= 52; j++)
 		{
-			if (str[i] == nor[i])
+			if (str[i] == nor[j])
 			{
-				str[i] = rot[i];
+				str[i] = rot[j];
 				break;
 			}
 		}
-		str++;
 	}
-	return (p);
+	return (str);
 }
