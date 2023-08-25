@@ -1,5 +1,6 @@
 #include "main.h"
 #include <ctype.h>
+#include <stdbool.h>
 /**
  * is_separator - function to takes a character c as an input
  *
