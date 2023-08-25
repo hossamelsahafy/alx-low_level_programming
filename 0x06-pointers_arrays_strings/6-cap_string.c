@@ -45,5 +45,5 @@ char *cap_string(char *str)
 			n = false;
 		}
 	}
-	return (str);
+
 }
