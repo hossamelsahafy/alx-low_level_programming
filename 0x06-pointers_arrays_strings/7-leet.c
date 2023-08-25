@@ -9,18 +9,17 @@ char *leet(char *str)
 	char *p = str;
 	char a[] = {'A', 'E', 'O', 'T', 'L'};
 	int v[] = {4, 3, 0, 7, 1};
-	unsigned int i;
+	int i, j;
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (i = 0; i < sizeof(a) / sizeof(char); i++)
+		for (j = 0; j < SIZE; j++)
 		{
-			if (str[i] == a[i] || str[i] == a[i] + 32)
+			if (str[i] == a[j] || str[i] == a[j] + 32)
 			{
-				str[i] = 48 + v[i];
+				str[i] = '0' + v[j];
 			}
 		}
-		str++;
 	}
 	return (p);
 }
