@@ -5,22 +5,30 @@
  *
  * @str: paramater point to char
  *
- * Return: will be str
+ * Return: will be p
  */
 
 char *rot13(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if ((str[i] >= 'a' && str[i] <= 'z') ||
-				(str[i] >= 'A' && str[i] <= 'Z'))
-		{
-			int offset = (str[i] >= 'a' && str[i] <= 'Z') ? 'a' : 'A';
+	char nor[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char *p = str;
 
-			str[i] = (str[i] - offset + 13) % 26 + offset;
+	while (str[i] != '\0')
+	{
+		for (i = 0; i <= 52; i++)
+		{
+			if (str[i] == nor[i])
+			{
+
+				str[i] = rot[i];
+				break;
+			}
 		}
+		str++;
 	}
-	return (str);
+	return (p);
+
 }
