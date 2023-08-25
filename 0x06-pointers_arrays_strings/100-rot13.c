@@ -16,9 +16,9 @@ char *rot13(char *str)
 	char rot[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 	char *p = str;
 
-	while (*str)
+	while (str[i] != '\0')
 	{
-		for (i = 0; i <= 52; i++)
+		for (i = '0'; i <= '52'; i++)
 		{
 			if (str[i] == nor[i])
 			{
@@ -30,5 +30,4 @@ char *rot13(char *str)
 		str++;
 	}
 	return (p);
-
 }
