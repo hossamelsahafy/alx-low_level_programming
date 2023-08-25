@@ -11,7 +11,7 @@
 char *cap_string(char *s)
 {
 	int i = 0;
-	bool start = true;
+	bool start = 1;
 	char sep[] = ",;.!?\"(){} \t\n";
 
 	while (s[i] != '\0')
@@ -20,18 +20,18 @@ char *cap_string(char *s)
 		{
 			if (start)
 			{
-				s[i] = toupper(s[i]);
-				start = false;
+				s[i] = toupper((unsigned char)s[i];
+				start = 0;
 			}
 		}
 		else
 		{
 			if (strchr(sep, s[i]))
 			{
-				start = true;
+				start = 1;
 			}
 		}
 		i++;
 	}
-	return s;
+	return (s);
 }
