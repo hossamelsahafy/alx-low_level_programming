@@ -1,4 +1,5 @@
 #include "main.h"
+#define SIZE 5
 /**
  * leet - function to replace letter by numbers
  *
