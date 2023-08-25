@@ -1,48 +1,33 @@
 #include "main.h"
 #include <ctype.h>
-#include <stdbool.h>
 /**
- * is_separator - function returns a value of type bool
+ * cap_string - function to capitalize words
  *
- * @c: parameter to define char
- *
- * Return:  returns true if the character c is one of the separators
- * , and false otherwise
- */
-bool is_separator(char c)
-{
-	return (c == ' ' || c == '\t' || c == '\n'
-		|| c == ',' || c == ';'
-		|| c == '.' || c == '!' || c == '?' || c == '"'
-		|| c == '(' || c == ')' || c == '{' || c == '}');
-}
-/**
- * cap_string - function to capitalize all words of string
- *
- * @str: parameter to point to char
+ * @str: parameter poin to char
  *
  * Return: will be str
  */
 char *cap_string(char *str)
 {
-	bool n = true;
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (str[i] == '\t')
+		if (i == 0 || str[i] == ' ' || str[i] == '\t'
+				|| str[i] == '\n' || str[i] == ',' || str[i] == ';'
+				|| str[i] == '.'  || str[i] == '?' || str[i] == '"'
+				|| str[i] == '!'  || str[i] == '(' || str[i] == ')'
+				|| str[i] == '{'  || str[i] == '}')
 		{
-			str[i] = ' ';
+			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+				str[i + 1] = str[i + 1] - 32;
+			if (str[i] == '\t')
+			{
+				str[i] = ' ';
+			}
 		}
-		if (is_separator(str[i]))
-		{
-			n = true;
-		}
-		else if (n)
-		{
-			str[i] = toupper(str[i]);
-			n = false;
-		}
+		i++;
 	}
 	return (str);
 }
