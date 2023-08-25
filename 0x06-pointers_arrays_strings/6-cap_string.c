@@ -3,37 +3,35 @@
 /**
  * cap_string - function to capitalize all words of string
  *
- * @str: parameter to point to char
+ * @s: parameter to point to char
  *
- * Return: will be str
+ * Return: will be s
  */
 char *cap_string(char *s)
 {
-	int i;
+	int i; 
+	bool start;
+	char sep[];
+
 	i = 0;
-	int flag;
-	flag = 1;
+	start = true;
+	sep[] = ",;.!?\"(){} \t\n";
 
 	while (s[i] != '\0')
 	{
 		if (isalpha(s[i]))
 		{
-			if (flag)
+			if (start)
 			{
 				s[i] = toupper(s[i]);
-				flag = 0;
+				start = false;
 			}
 		}
 		else
 		{
-			for (int j = 0; j < 14; j++)
+			if (strchr(sep, s[i]))
 			{
-				char sep[] = ",;.!?\"(){}";
-				if (s[i] == sep[j] || isspace(s[i]))
-				{
-					flag = 1;
-					break;
-				}
+				start = true;
 			}
 		}
 		i++;
