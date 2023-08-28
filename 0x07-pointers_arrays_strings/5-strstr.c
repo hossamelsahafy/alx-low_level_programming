@@ -7,26 +7,29 @@
  *
  * @needle: parameter that point to char
  *
- * Return:if *p == *q so it will return p
- * if no match was found return will be Null
+ * Return:if *p2 == '\0' so it will return haystack
+ * if haystack reached the end no match will found
+ * so it will return NULL
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *p = haystack;
-	char *q;
+	char *p1;
+	char *p2;
 
-	while (*p != '\0')
+	while (*haystack != '\0')
 	{
-		q = needle;
-		while (*q != '\0')
+		p1 = haystack;
+		p2 = needle;
+		while (p2 != '\0' && p2 == p1)
 		{
-			if (*p == *q)
-			{
-				return (p);
-			}
-			p++;
+			p1++;
+			p2++;
 		}
-		q++;
+		if (*p2 == '\0')
+		{
+			return (haystack);
+		}
+		haystack++;
 	}
 	return (NULL);
 }
