@@ -15,10 +15,10 @@ unsigned int _strspn(char *s, char *accept)
 	char *q;
 	unsigned int n = 0;
 
-	while (p != '\0')
+	while (*p != '\0')
 	{
 		q = accept;
-		while (q != '\0')
+		while (*q != '\0')
 		{
 			if (*p == *q)
 			{
@@ -31,8 +31,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			break;
 		}
+		p++;
 	}
 	return (n);
 }
-
-
