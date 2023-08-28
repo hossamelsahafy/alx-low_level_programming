@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_diagsums - function to print the sum of 
+ * print_diagsums - function to print the sum of
  * the two diagonals of a square matrix of integers
  *
  * @a: parameter that poin to integer
@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 			}
 			if (i + j  == size - 1)
 			{
-				sum2 = sum2 + *((a + i *size) + j;
+				sum2 = sum2 + *((a + i * size) + j;
 			}
 		}
 	}
