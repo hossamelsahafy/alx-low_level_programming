@@ -6,6 +6,9 @@
  * @x: parameter to identify integer
  *
  * @y: parameter to identify integer
+ *
+ * Return: if y < 0 retuen will be -1
+ * if y == 0 return will be 1
  */
 int _pow_recursion(int x, int y)
 {
