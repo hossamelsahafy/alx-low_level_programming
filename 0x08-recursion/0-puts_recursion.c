@@ -7,7 +7,7 @@
  *
  * Return: to exit the function incase it has printed all characters
  */
-void _puts_recursion(char*s)
+void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
