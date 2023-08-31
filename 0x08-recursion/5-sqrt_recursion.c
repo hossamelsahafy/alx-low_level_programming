@@ -11,11 +11,20 @@ int _sqrt_recursion(int n)
 {
 	int i = 1;
 
-	while (i * i <= n)
+	if (i * i == n)
 	{
-		if (i * i == n)
-			return (i);
-		i++;
+		return (i);
 	}
-	return (-1);
+	if (i * i < n)
+	{
+		return (-1);
+	}
+	if (i * i > n)
+	{
+		i = 1;
+		return (1);
+	}
+	i++;
+	return (_sqrt_recursion(n));
+
 }
