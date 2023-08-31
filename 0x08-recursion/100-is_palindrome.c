@@ -2,9 +2,9 @@
 #include <string.h>
 #include <ctype.h>
 
-/***
- * is_palindrome_rec - function to check if a substring
- * is a palindrome using recursion
+/**
+ * is_palindrome_rec - function to check if a substring is a palindrome
+ * using recursion
  *
  * @s: parameter point to char
  *
@@ -30,8 +30,8 @@ int is_palindrome_rec(char *s, int i, int j)
 	return (is_palindrome_rec(s, i + 1, j - 1));
 }
 /**
- * is_palindrome - function to return 1
- * if a string is a palindrome and 0 if not
+ * is_palindrome - function to return 1 if a string is a palindrome
+ * and 0 if not
  *
  * @s: parameter point to char
  *
