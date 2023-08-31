@@ -13,4 +13,5 @@ int is_divisible(int n, int i);
 int is_prime_number(int n);
 int is_palindrome_rec(char *s, int i, int j);
 int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
 #endif
