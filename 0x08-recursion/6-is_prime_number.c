@@ -22,12 +22,12 @@ int is_divisible(int n, int i)
 
 		return (1);
 	}
-	return is_divisible(n, i + 1);
+	return (is_divisible(n, i + 1));
 }
 
 /**
- * is_prime_number - function to return 1 if the input integer is a prime number
- * otherwise return 0
+ * is_prime_number - function to return 1 if the input 
+ * integer is a prime number, otherwise return 0
  *
  * @n: parameter ti identify integer
  *
