@@ -11,4 +11,6 @@ int _pow_recursion(int x, int y);
 int MEOW_FOR_HELP(int n, int i);
 int is_divisible(int n, int i);
 int is_prime_number(int n);
+int is_palindrome_rec(char *s, int i, int j);
+int is_palindrome(char *s);
 #endif
