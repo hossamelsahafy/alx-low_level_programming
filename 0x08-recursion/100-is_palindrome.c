@@ -27,10 +27,10 @@ int is_palindrome_rec(char *s, int i, int j)
 	{
 		return (0);
 	}
-	return is_palindrome_rec(s, i + 1, j - 1);
+	return (is_palindrome_rec(s, i + 1, j - 1));
 }
 /**
- * is_palindrome - function to return 1 
+ * is_palindrome - function to return 1
  * if a string is a palindrome and 0 if not
  *
  * @s: parameter point to char
@@ -41,5 +41,5 @@ int is_palindrome(char *s)
 {
 	int len = strlen(s);
 
-	return is_palindrome_rec(s, 0, len - 1);
+	return (is_palindrome_rec(s, 0, len - 1));
 }
