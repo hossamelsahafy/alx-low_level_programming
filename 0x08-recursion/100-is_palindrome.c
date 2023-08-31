@@ -16,13 +16,13 @@
  */
 int is_palindrome_rec(char *s, int i, int j)
 {
+	char c1 = tolower(s[i]);
+	char c2 = tolower(s[j]);
+
 	if (i >= j)
 	{
 		return (1);
 	}
-	char c1 = tolower(s[i]);
-	char c2 = tolower(s[j]);
-
 	if (c1 != c2)
 	{
 		return (0);
