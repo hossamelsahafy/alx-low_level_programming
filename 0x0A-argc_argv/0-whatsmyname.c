@@ -6,7 +6,7 @@
  *
  * @argc: parameter to identfy integer
  *
- * @argv[]: parameter to identfy string
+ * @argv: parameter to identfy string
  *
  * Return: will be 0
  */
