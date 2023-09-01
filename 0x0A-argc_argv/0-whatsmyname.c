@@ -5,7 +5,7 @@
  *
  * @argc: parameter to identfy integer
  *
- * @argv: parameter to identfy string
+ * @argv: parameter point to char
  *
  * Return: will be 0
  */
