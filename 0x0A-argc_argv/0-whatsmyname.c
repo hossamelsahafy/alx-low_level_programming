@@ -7,7 +7,7 @@
  *
  * @argv: parameter to identfy string
  *
- * Return will be 0
+ * Return: will be 0
  */
 int main(int argc, char *argv[])
 {
