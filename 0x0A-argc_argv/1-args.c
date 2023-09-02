@@ -8,9 +8,14 @@
  * @argv: parameter point to char
  *
  * Return: will be 0
+ *
+ * Description: void is for that unused *argv[]
  */
 int main(int argc, char *argv[])
 {
+	(void) argv;
+
 		printf("%i\n", argc - 1);
+
 	return (0);
 }
