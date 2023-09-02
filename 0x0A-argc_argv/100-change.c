@@ -13,33 +13,29 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
 	int cents;
-	int coins;
+	int coins[] = {25, 10, 5, 2, 1};
+	int size = sizeof(coins) / sizeof(int);
+	int n_coins;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
-	}
+        }
 	cents = atoi(argv[1]);
 	if (cents < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	coins = 0;
-	coins = coins + (cents / 25);
-	cents = cents % 25;
-	coins = coins + (cents / 10);
-	coins = coins % 10;
-	coins = coins + (cents / 5);
-	cents = cents % 5;
-	coins = coins + (cents / 2);
-	cents = cents % 2;
-	coins = coins + cents;
-	printf("%d\n", coins);
+	n_coins = 0;
+	for (i = 0; i < size; i++)
+	{
+		n_coins = n_coins + (cents / coins[i]);
+		cents = cents % coins[i];
+	}
+	printf("%d\n", n_coins);
 	return (0);
 }
-
-
-
