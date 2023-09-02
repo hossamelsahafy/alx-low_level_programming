@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)
 	{
 		num = atoi(argv[i]);
+
 		if (num > 0 && num != 0)
 		{
 			sum = sum + num;
