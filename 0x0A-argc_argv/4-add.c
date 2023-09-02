@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - function to add positive numbers
@@ -9,29 +8,26 @@
  *
  * @argv: parameter point to argv
  *
- * Return: if argc == 1 it will return 0
- * if (!isdigit(argv[i][j])) it will return 1
- * other wise 0
+ * Return: if the umber is bot digit it will return 1
+ * otherwise 0
  */
 int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int i;
-	int num;
+	int j;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[i]);
-
-		if (num > 0 && num != 0)
+		for (j = 0; j < argv[i][j]; j++)
 		{
-			sum = sum + num;
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		sum = sum + atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
