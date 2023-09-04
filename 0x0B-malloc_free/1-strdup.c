@@ -8,7 +8,7 @@
  *
  * @str: parameter point to char
  *
- * Return: if p == NULL return will be NULL
+ * Return: if p == NULL and str == NULL return will be NULL
  * otherwise p
  */
 char *_strdup(char *str)
@@ -16,11 +16,13 @@ char *_strdup(char *str)
 	size_t len = strlen(str);
 	char *p = (char *)malloc(len + 1);
 
-
 	if (p == NULL)
 	{
 		return (NULL);
 	}
+	if (str == NULL)
+	{
+		return (NULL);
 	strcpy(p, str);
 	return (p);
 
