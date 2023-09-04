@@ -26,14 +26,14 @@ char *str_concat(char *s1, char *s2)
 	{
 		return ("");
 	}
-	len1 = strlen(s1);
-	len2 = strlen(s2);
-
 	if (p == NULL)
 	{
 		return (NULL);
 	}
+	len1 = strlen(s1);
+        len2 = strlen(s2);
 	p = malloc(len1 + len2 + 1);
+
 	strcpy(p, s1);
 	strcat(p, s2);
 
