@@ -7,6 +7,5 @@
  *
  *
  */
-char **strtow(char *str)
-{
+
 
