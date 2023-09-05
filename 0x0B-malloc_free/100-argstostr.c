@@ -8,7 +8,7 @@
  *
  * @av: parameter poin to char
  *
- * Return: if ac == 0 or av == '\0' it  will return NULL
+ * Return: if ac == 0 or av == NULL it  will return NULL
  * otherwise str
  */
 char *argstostr(int ac, char **av)
@@ -19,14 +19,14 @@ char *argstostr(int ac, char **av)
 	int k;
 	int len;
 
-	if (ac == 0 || av == '\0')
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
 	len = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0')
+		for (j = 0; av[i][j] != '\0'; j++)
 		len++;
 		len++;
 	}
@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 	k = 0;
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j] != '\0')
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			str[k] = av[i][j];
 			k++;
