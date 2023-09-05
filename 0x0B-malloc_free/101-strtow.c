@@ -24,7 +24,7 @@ int  count_words(char *str)
 		{
 			i_word = 0;
 		}
-		else  if (word == 0)
+		else  if (i_word == 0)
 		{
 			i_word = 1;
 			count++;
