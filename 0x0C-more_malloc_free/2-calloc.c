@@ -5,7 +5,7 @@
 /**
  * _calloc - function to allocate memory for an array, using malloc
  *
- * @nmemb: parameter to defin eunsigned int 
+ * @nmemb: parameter to defin eunsigned int
  *
  * @size: parameter to define unsigned int
  *
