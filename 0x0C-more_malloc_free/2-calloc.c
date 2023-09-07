@@ -5,12 +5,12 @@
 /**
  * _calloc - function to allocate memory for an array, using malloc
  *
- * @nmemb: parameter to defin eunsigned int
+ * @nmemb: parameter to define unsigned int
  *
  * @size: parameter to define unsigned int
  *
  * Return: if nmemb or size == 0 iwill be NULL
- * otherwise Null
+ * otherwise p
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
