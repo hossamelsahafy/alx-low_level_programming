@@ -11,7 +11,7 @@
  *
  * @n parameter to define unsigned integer
  *
- * Return: will be n_str
+ * Return: if n_str == NULL otherwise will be n_str
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -25,6 +25,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= strlen(s2))
 		n = strlen(s2);
 	n_str = malloc(sizeof(char) * (strlen(s1) + n + 1));
+	if (n_str == NULL)
+		return (NULL);
 	for (i = 0; s1[i] != '\0'; i++)
 		n_str[i] = s1[i];
 	for (j = 0; j < n; j++)
