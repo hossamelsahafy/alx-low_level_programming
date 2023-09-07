@@ -9,7 +9,7 @@
  *
  * @s2: parameter point to char
  *
- * @n parameter to define unsigned integer
+ * @n: parameter to define unsigned integer
  *
  * Return: if n_str == NULL otherwise will be n_str
  */
