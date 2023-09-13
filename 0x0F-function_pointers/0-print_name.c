@@ -2,27 +2,17 @@
 #include <stdio.h>
 
 /**
- * p_char - function to print char
- *
- * c: parameter to identify char
- */
-void p_char(char c)
-{
-	printf("%c\n", c);
-}
-/**
  * print_name - function to print name
  *
  * @name: parameter point to char
  *
- * @f: parameter point to void
+ * @f: parameter point to f
+ *
+ * Return: if  name or f  == NULL i will exit the function
  */
-
 void print_name(char *name, void (*f)(char *))
 {
-	while (*name != '\0')
-	{
-		f*(name);
-		name++;
-	}
+	if (name == NULL || f == NULL)
+		return;
+	f(name);
 }
