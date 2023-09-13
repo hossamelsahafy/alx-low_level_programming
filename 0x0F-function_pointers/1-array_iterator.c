@@ -1,5 +1,6 @@
 #include "function_pointers.h"
-
+#include <stdio.h>
+#include <stddef.h>
 
 /**
  * array_iterator - function to execute a function given as
@@ -10,12 +11,18 @@
  * @size: parameter to identify size_t
  *
  * @action: parameter point to function
+ *
+ * Return: if arraay or action == NULL it will exit
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	size_t i = 0;
-
-	for (i = 0; i < size; i++)
-		action(array[i]);
-	free (i);
+	if (array == NULL || action == NULL)
+	{
+		return;
+	}
+	while (size-- > 0)
+	{
+		action(*array);
+		array++;
+	}
 }
