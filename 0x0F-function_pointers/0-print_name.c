@@ -8,7 +8,7 @@
  */
 void p_char(char c)
 {
-	printf("%c", c);
+	printf("%c\n", c);
 }
 /**
  * print_name - function to print name
@@ -20,9 +20,9 @@ void p_char(char c)
 
 void print_name(char *name, void (*f)(char *))
 {
-	while (name != '\0')
+	while (*name != '\0')
 	{
-		(f*name);
+		f*(name);
 		name++;
 	}
 }
