@@ -38,14 +38,14 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		return 1;
+		return (1);
 	}
 	size = atoi(argv[1]);
 	if (size <= 0)
 	{
 		printf("Error\n");
-		return 2;
+		return (2);
 	}
 	print_opcodes(main, size);
-	return 0;
+	return (0);
 }
