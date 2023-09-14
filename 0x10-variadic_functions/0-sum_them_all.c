@@ -14,10 +14,15 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int count;
 	int sum = 0;
+	va_list args;
 
+	if (n == 0)
+		return (0);
+	va_start(args, n);
 	for (count = 0; count < n; count++)
 	{
-		sum = sum + *(int *)((char *)&n + sizeof(unsigned int) + count * sizeof(int));
+		sum = sum + va_arg(args, int);
 	}
-	return (sum);
+	va_end(args);
+	return (sum);	
 }
