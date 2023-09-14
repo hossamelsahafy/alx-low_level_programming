@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (100);
 	}
-	result = op_func(n1 , n2);
+	result = op_func(n1, n2);
 	printf("%d\n", result);
 	return (0);
 }
