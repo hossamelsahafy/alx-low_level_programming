@@ -52,7 +52,7 @@ void print_string(va_list args)
 	}
 	else
 	{
-		print("%s", p);
+		printf("%s", p);
 	}
 }
 
@@ -84,13 +84,13 @@ void print_all(const char * const format, ...)
 		{
 			print_float(args);
 		}
-		else if (s == s)
+		else if (s == 's')
 		{
 			print_string(args);
 		}
 		if (format[i + 1] != '\0')
 		{
-			printf(" ");
+			printf(", ");
 		}
 		i++;
 	}
