@@ -19,14 +19,13 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i;
+	int i = 0;
 
-	for (i = 0; i < 5; i++)
+	while (i < 5)
 	{
-		if (*(ops[i].op) == *s && *(s + 1) == '\0')
-		{
+		if (*(ops[i].op) == *s)
 			return (ops[i].f);
-		}
+		i++;
 	}
 	return (ops[i].f);
 }
