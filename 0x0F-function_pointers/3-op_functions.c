@@ -50,6 +50,8 @@ int op_mul(int a, int b)
  * @a: parameter to identify integer
  *
  * @b: parameter to identify integer
+ *
+ * Return: will be a / b
  */
 
 int op_div(int a, int b)
@@ -63,6 +65,8 @@ int op_div(int a, int b)
  * @a: parameter to identify integer
  *
  * @b: parameter to identify integer
+ *
+ * Return: the remainng of dividing a / b
  */
 
 int op_mod(int a, int b)
