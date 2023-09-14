@@ -1,6 +1,8 @@
 #ifndef calc_H
 #define calc_H
 
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * struct op - Struct op
  *
@@ -26,5 +28,4 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int);
 
-int main(int argc, char *argv[]);
 #endif
