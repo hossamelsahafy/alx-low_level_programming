@@ -12,7 +12,7 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int count;
+	unsigned int count;
 	int sum = 0;
 
 	for (count = 0; count < n; count++)
