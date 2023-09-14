@@ -11,7 +11,7 @@
  * @cmp: parameter point to function
  *
  * Return: if cmp or array == NULL or size <= 0 return will be -1
- * otherwise 1
+ * if cmp(array[i]) != 0 return will be i
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -21,11 +21,10 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		return (-1);
 	}
-	for (count = 0; count < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		if ((cmp(array[i])) != 0)
-		{
-			return (1);
-		}
+		if (cmp(array[i]))
+			return (i);
 	}
+	return (-1);
 }
