@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * print_ char - function to print char
+ * print_char - function to print char
  *
  * @args: parameter to identify va_list
  */
@@ -65,7 +65,7 @@ void print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	char s;
-	int i =0;
+	int i = 0;
 	va_list args;
 
 	va_start(args, format);
