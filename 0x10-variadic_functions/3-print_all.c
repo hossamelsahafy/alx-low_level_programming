@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format != NULL && format[i] != '\0')
 	{
-		if (p)
+		if (p != 0)
 		{
 			printf(", ");
 		}
@@ -41,7 +41,7 @@ void print_all(const char * const format, ...)
 				if (s == NULL)
 					s = "(nil)";
 				printf("%s", s);
-				sep = 1;
+				p = 1;
 				break;
 		}
 		i++;
