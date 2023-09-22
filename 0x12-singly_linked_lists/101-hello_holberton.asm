@@ -1,12 +1,12 @@
 ;-----------------------------------------------------------------
 ;Writes "Hello, Holberton" to the console using only system calls
 ;-----------------------------------------------------------------
-	global	start
+	global	main
 
 	extern	printf
 
 	section	.text
-start:
+main:
 	mov	rdi, meow
 	xor	rax, rax
 	call	printf
