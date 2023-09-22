@@ -7,7 +7,7 @@
 
 	section	.text
 main:
-	mov	rdi, meow
+	mov	rdi, meo
 	xor	rax, rax
 	call	printf
 
@@ -16,5 +16,5 @@ main:
 	syscall
 
 	section	.data
-meow:
+meo:
 	db	"hello_holberton", 10, 0
