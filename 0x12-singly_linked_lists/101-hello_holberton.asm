@@ -17,4 +17,4 @@ main:
 
 	section	.data
 meo:
-	db	"hello_holberton", 10, 0
+	db	"Hello, Holberton", 10, 0
