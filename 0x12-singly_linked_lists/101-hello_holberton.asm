@@ -3,15 +3,18 @@
 ;-----------------------------------------------------------------
 	global	start
 
-	section		.text
-start:	mov	rax, 0x02000004
-	mov	rdi, 1
-	mov	rsi, meow
-	mov	rdx, 18
-	syscall
+	extern	printf
+
+	section	.text
+start:
+	mov	rdi, meow
+	xor	rax, rax
+	call	printf
+
 	mov	rax, 0x02000001
 	xor	rdi, rdi
 	syscall
 
 	section	.data
-meow:	db	"Hello, Holberton", 10
+meow:
+	db	"hello_holberton", 10, 0
