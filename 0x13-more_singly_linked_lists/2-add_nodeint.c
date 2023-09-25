@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * add_nodeint -  function to add a new node at the beginning of a listint_t list
+ * add_nodeint -  function to add a new node at the
+ * beginning of a listint_t list
  *
  * @head: parameter point to listint_t
  *
