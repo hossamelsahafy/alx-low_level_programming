@@ -9,7 +9,7 @@
  *
  * @index: parameter to identify unsigned int
  *
- * Returns: 1 if it succeeded, -1 if it failed
+ * Return: 1 if it succeeded, -1 if it failed
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -18,7 +18,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *tmp;
 	unsigned int i;
 
-	if (head == NULL || * head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		return (-1);
 	}
@@ -31,7 +31,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	c = *head;
 
-	for (i = 0; i < index -1; i++)
+	for (i = 0; i < index - 1; i++)
 	{
 		if (c->next == NULL)
 		{
