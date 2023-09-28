@@ -6,7 +6,7 @@
  *
  * @b: parameter point to const char
  *
- * Returrn: if b or *b == NULL it will return 0
+ * Return: if b or *b == NULL it will return 0
  * otherwise n
  */
 
