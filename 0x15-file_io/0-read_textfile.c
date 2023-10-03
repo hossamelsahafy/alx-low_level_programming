@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 /**
  * read_textfile - function to read a text file and prints
@@ -41,10 +40,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	n_write = fwrite(buff, sizeof(char), n_read, stdout);
-	if (n_write == -1 || n_write != n_read)
+	free(buff);
+	if (n_write == 0 || n_write != n_read)
 	{
 		return (0);
 	}
-    free(buff);
 	return (n_read);
 }
