@@ -16,7 +16,7 @@
  * if write fails or does not write the expected amount of bytes, return 0
  */
 
-size_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	size_t n_read = 0;
 	size_t n_write = 0;
