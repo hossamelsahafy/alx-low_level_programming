@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * hash_table_get - function that retrieves a value associated with a key
@@ -32,5 +33,5 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		}
 		tmp = tmp->next;
 	}
-
+	return (NULL);
 }
