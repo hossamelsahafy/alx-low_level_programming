@@ -1,0 +1,9 @@
+EXECUTABLE = school
+
+all : $(EXECUTABLE)
+
+$(EXECUTABLE) : main.c
+		gcc -o $(EXECUTABLE) main.c school.c
+
+clean:
+		rm $(EXECUTABLE)
