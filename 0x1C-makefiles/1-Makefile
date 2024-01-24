@@ -1,0 +1,11 @@
+CC = gcc
+SRC = $(wildcard *.c)
+EXECUTABLE = school
+
+all: $(EXECUTABLE)
+
+$(EXECUTABLE): $(SRC)
+	$(CC) -o $(EXECUTABLE) $(SRC)
+
+clean:
+	rm $(EXECUTABLE)
