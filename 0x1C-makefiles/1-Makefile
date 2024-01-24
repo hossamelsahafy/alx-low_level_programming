@@ -2,10 +2,10 @@ CC = gcc
 SRC = $(wildcard *.c)
 EXECUTABLE = school
 
-all: $(EXECUTABLE)
+all: clean $(EXECUTABLE)
 
 $(EXECUTABLE): $(SRC)
 	$(CC) -o $(EXECUTABLE) $(SRC)
 
 clean:
-	rm $(EXECUTABLE)
+	@rm -f $(EXECUTABLE)
