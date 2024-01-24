@@ -7,12 +7,7 @@ RM = rm -f
 %.o: %.c m.h
 	$(CC) -c -o $@ $<
 
-all: pre $(NAME)
-
-pre:
-	@$(RM) $(NAME)
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+all: $(OBJ)
 
 .PHONY: all clean oclean fclean re
 
