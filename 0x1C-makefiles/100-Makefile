@@ -1,5 +1,5 @@
 SRC = main.c school.c
-NAME = school
+NAME = holberton
 CFLAGS = -Wall -Werror -Wextra -pedantic
 OBJ = $(SRC:.c=.o)
 CC = gcc
