@@ -4,6 +4,8 @@ OBJ = $(SRC:.c=.o)
 NAME = school
 RM = rm -f
 
+%.o: %.c m.h
+	$(CC) -c -o $@ $<
 
 all: pre $(NAME)
 
@@ -11,9 +13,6 @@ pre:
 	@$(RM) $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-%.o: %.c m.h
-	$(CC) -c $< -o $@
 
 .PHONY: all clean oclean fclean re
 
