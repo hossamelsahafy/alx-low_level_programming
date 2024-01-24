@@ -1,12 +1,11 @@
 CC = gcc
 SRC = main.c school.c
-OBJ = $(SRC:.c=.o)
 EXECUTABLE = school
 
-all: $(EXECUTABLE)
-	$(CC) -o $(EXECUTABLE) $(OBJ)
+all: clean $(EXECUTABLE)
 
-$(OBJ): %.o: %.c
-	$(CC) -c $< -o $@
+$(EXECUTABLE): $(SRC)
+	$(CC) $^ -o $@
+
 clean:
-	@rm -f $(OBJ) $(EXECUTABLE)
+	@rm -f $(EXECUTABLE)
