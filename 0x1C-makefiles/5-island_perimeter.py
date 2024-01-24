@@ -2,13 +2,16 @@
 
 """Function To Calculate Perimeter Of The Island"""
 def island_perimeter(grid):
+    print("Grid:", grid)
+    print("Function called")
     perimeter = 0
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if grid[i][j] == 1:
                 perimeter += 4
-            if i > 0 and grid [i - 1][j] == 1:
-                perimeter -= 2
-            if j > 0 and grid [i][j - 1] == 1:
-                perimeter -= 2
+                if i > 0 and grid[i-1][j] == 1:
+                    perimeter -= 2
+                if j > 0 and grid[i][j-1] == 1:
+                    perimeter -= 2
+    print(f"Perimeter calculated: {perimeter}") 
     return perimeter
