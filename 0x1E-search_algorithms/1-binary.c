@@ -1,5 +1,6 @@
 #include "search.h"
 #include <stdio.h>
+
 /**
  * Print_Array_Helper - helper function
  *
@@ -11,21 +12,21 @@
  */
 void Print_Array_Helper(int *array, size_t start, size_t end)
 {
-    size_t i;
+	size_t i;
 
-    printf("Searching in array: ");
-    for (i = start; i < end; i++)
-    {
-        printf("%d ", array[i]);
-        if (i < end - 1)
-        {
-            printf(", ");
-        }
-        else
-        {
-            printf("\n");
-        }
-    }
+	printf("Searching in array: ");
+	for (i = start; i < end; i++)
+	{
+		printf("%d ", array[i]);
+		if (i < end - 1)
+		{
+			printf(", ");
+		}
+		else
+		{
+			printf("\n");
+		}
+	}
 }
 
 /**
@@ -43,30 +44,31 @@ void Print_Array_Helper(int *array, size_t start, size_t end)
  */
 int binary_search(int *array, size_t size, int value)
 {
-    size_t start = 0;
-    size_t end = size;
-    size_t mid;
+	size_t start = 0;
+	size_t end = size;
+	size_t mid;
 
-    if (array == NULL)
-    {
-        return (-1);
-    }
-    while (start < end)
-    {
-        Print_Array_Helper(array, start, end);
-        mid = (start + end) / 2;
-        if (array[mid] < value)
-        {
-            start = mid + 1;
-        }
-        else if (array[mid] > value)
-        {
-            end = mid;
-        }
-        else
-        {
-            return (mid);
-        }
-    }
-    return (-1);
+	if (array == NULL)
+	{
+		return (-1);
+	}
+	while (start < end)
+	{
+		Print_Array_Helper(array, start, end);
+		mid = (start + end) / 2;
+		if (array[mid] < value)
+		{
+			start = mid + 1;
+		}
+		else if (array[mid] > value)
+		{
+			end = mid;
+		}
+		else
+		{
+			return (mid);
+		}
+	}
+	return (-1);
 }
+
